@@ -39,7 +39,7 @@ The merged data was originally in a Python data frame. We converted it to SQL da
 Source 3:
 The original table included yearly emissions data by source and by pollutant for all 50 U.S. states. We filtered the pollution data to only include data from New York state.
 
-We cleaned the data to remove extra columns ("STATE_FIPS" and "STATE_ABBR"). Then, we renamed the remaining columns to make it easier.
+We cleaned the data to remove extra columns ("STATE_FIPS" and "STATE_ABBR"). Then, we renamed the remaining columns to make it easier to read.
 
 We converted the cleaned table to SQL data and stored it in PGAdmin as a new table.
 
