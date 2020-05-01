@@ -7,7 +7,7 @@ Use greenhouse gas emissions data and climate data, and find the relationships b
 
 ### Data Sources ###
 
-Following data was selected because, through combining information from these tables, we can analyze how the amount of greenhouse gas emission is assocaited with the changes in temperature over the years.
+The following data was selected because, through combining information from these tables, we can analyze how the amount of greenhouse gas emission is assocaited with the changes in temperature over the years.
 
 Source 1: Historical monthly average weather data for New York City: https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf
 * Found on this site: https://www.weather.gov/okx/CentralParkHistorical
@@ -28,18 +28,17 @@ We filtered the U.S. pollution data by pollution source to only include data fro
 We cleaned our data by removing extra columns from our table and renaming the columns that we kept to clean our data.
 Source 1:
 The original table included monthly temperature from Jan - Dec. To improve clarity, we calculated mean temperatures for Jan - Mar, Apr - Jun, Jul - Sep, Oct - Dec. 
-After the temperature data was aggregated, the original monthly data was excluded.
+After we aggregated the temperature data, we excluded the original monthly data.
 Source 2:
-The original "Greenhouse gas emissions data for New York state" data (Source 2) included 'Electric Generation Total' and 'Net Imports of Electricity'. 
-The values in these two columns were summed by year since both columns indicated the amounts of emission through burning fossil fuel for generating electricity.
-After the amounts of emission was aggregated/summed, the original 2 columns were excluded.
+We summed the values in these two columns by year since both columns indicated the amount of emissions that came from burning fossil fuel for generating electricity.  
+After we summed the amount of these emissions, we excluded the original 2 columns.”
 
 We figured that the two tables (Sources 1 and 2) could be joined on "year". One file had "year" as "Year". The other had year as "YEAR". To make the join successful,
 "Year" was renamed as "YEAR".
 
 We joined the temperature and New York state greenhouse gas emissions data on YEAR to see the relationship between the amount of emissions and changes in the weather.
 
-The merged data was originally in python data frame. It was converted to sql data and stored in PGAdmin. We also added a primary key (ID) to the table. 
+The merged data was originally in a Python data frame. We converted it to SQL data and stored it in PGAdmin. We also added a primary key (ID) to the table.. 
 
 
 ### Final Production Database ###
