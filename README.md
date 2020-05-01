@@ -50,4 +50,4 @@ We produced a relational database in PostgreSQL named ETL_project. The database 
 ### Final Tables in Database ###
 The etl_load table shows the merged table with temperature and New York state greenhouse gas emissions by year.
 
-The emissions_type table shows the yearly emissions by source and by pollutant by year for New York state.
+The emissions_type table shows the yearly emissions by source and by pollutant for New York state.
